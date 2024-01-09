@@ -28,6 +28,23 @@ body {
     padding: 30px 20px 20px;
     background: #181818;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    opacity: 0; 
+    animation: slideIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .display {
@@ -39,7 +56,7 @@ body {
     margin-bottom: 10px;
     font-size: 25px;
     background-color: #131313;
-    color: #000e1a;
+    color: aliceblue;
     pointer-events: none;
 }
 
@@ -71,3 +88,5 @@ body {
 .op {
     color: #2f9fff;
 }
+
+
